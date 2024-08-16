@@ -1,0 +1,22 @@
+/*--/*--------------------------------------------RESET-----------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+/*--------------------------------------------FUENTES-----------------------------------------------------*/ 
+@font-face {
+    font-family: CHARLEY;
+    src: url('../font/CHARLEY.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: bebasNeue;
+    src: url('../font/BebasNeue book.ttf');
+}
+
+/*----------------------------------------------BODY-----------------------------------------------------*/ 
+body {
+    background-color: #F2EFE5;
+}

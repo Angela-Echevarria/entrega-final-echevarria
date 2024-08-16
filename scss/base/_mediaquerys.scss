@@ -1,0 +1,165 @@
+/* Media query header*/
+@mixin header-responsive {
+    @media (max-width: 740px) {
+        .nav-menu {
+            display: none;
+        }
+    
+        .menu-toggle {
+            display: block;
+        }
+    }
+}
+@media (max-width: 360px) {
+    header {
+        .container {
+            .logo {
+                h1 {
+                    font-size: 1.5rem; 
+                }
+
+                p {
+                    font-size: 0.7rem; 
+                }
+            }
+        }
+    }
+}
+
+    // Media query Hero
+    @mixin hero-responsive {
+        @media (max-width: 1024px) {
+            .hero h2 {
+                font-size: 50px;
+            }
+
+            .hero p {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // Media query obras
+    @mixin obras-responsive {
+        @media (max-width: 800px) {
+            h2,
+            img {
+                display: none;
+            }
+
+            div {
+                width: 40%;
+                padding: 12 20px;
+                margin: 10px;
+                align-items: center;
+            }
+        }
+    }
+
+
+    // Media query para destacados
+    @mixin destacados-responsive {
+        @media (max-width: 1200px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .destacados h2 {
+                font-size: 30px;
+            }
+
+            .destacados-contenedor h3,
+            .destacados-contenedor h4 {
+                font-size: 18px;
+            }
+
+            .destacados-contenedor button {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .destacados h2 {
+                font-size: 24px;
+            }
+
+            .destacados-contenedor h3,
+            .destacados-contenedor h4 {
+                font-size: 16px;
+            }
+
+            .destacados-contenedor button {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    // Media query footer
+    @mixin footer-responsive {
+        @media (max-width: 800px) {
+            .footerNav ul {
+                flex-direction: column;
+            }
+
+            .footerNav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .socialIcons a {
+                padding: 8px;
+                margin: 4px;
+            }
+        }
+    }
+
+// Media query para pantallas menores a 863px 
+@media (max-width: 863px) {
+    .fundador img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .fundador-info {
+        font-size: 18px; 
+    }
+}
+
+    // Media query esculturas y obras
+    @mixin esculturas-obras-responsive {
+        @media (max-width: 1482px) {
+            .grid-container-fundadores {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
