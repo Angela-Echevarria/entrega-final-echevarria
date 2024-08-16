@@ -393,42 +393,26 @@ main {
         .pinturas-pag .pintura-item .pintura-info button:hover {
           background-color: #444; }
   @media (max-width: 1482px) {
-    .esculturas-pag .esculturas-pag .escultura-item,
-    .esculturas-pag .esculturas-pag .pintura-item,
-    .esculturas-pag .pinturas-pag .escultura-item,
-    .esculturas-pag .pinturas-pag .pintura-item,
-    .pinturas-pag .esculturas-pag .escultura-item,
-    .pinturas-pag .esculturas-pag .pintura-item,
-    .pinturas-pag .pinturas-pag .escultura-item,
-    .pinturas-pag .pinturas-pag .pintura-item {
+    .esculturas-pag .escultura-item,
+    .esculturas-pag .pintura-item,
+    .pinturas-pag .escultura-item,
+    .pinturas-pag .pintura-item {
       flex-direction: column;
       align-items: flex-start; }
-      .esculturas-pag .esculturas-pag .escultura-item img,
-      .esculturas-pag .esculturas-pag .pintura-item img,
-      .esculturas-pag .pinturas-pag .escultura-item img,
-      .esculturas-pag .pinturas-pag .pintura-item img,
-      .pinturas-pag .esculturas-pag .escultura-item img,
-      .pinturas-pag .esculturas-pag .pintura-item img,
-      .pinturas-pag .pinturas-pag .escultura-item img,
-      .pinturas-pag .pinturas-pag .pintura-item img {
+      .esculturas-pag .escultura-item img,
+      .esculturas-pag .pintura-item img,
+      .pinturas-pag .escultura-item img,
+      .pinturas-pag .pintura-item img {
         width: 100%;
         height: auto; }
-      .esculturas-pag .esculturas-pag .escultura-item .escultura-info,
-      .esculturas-pag .esculturas-pag .escultura-item .pintura-info,
-      .esculturas-pag .esculturas-pag .pintura-item .escultura-info,
-      .esculturas-pag .esculturas-pag .pintura-item .pintura-info,
-      .esculturas-pag .pinturas-pag .escultura-item .escultura-info,
-      .esculturas-pag .pinturas-pag .escultura-item .pintura-info,
-      .esculturas-pag .pinturas-pag .pintura-item .escultura-info,
-      .esculturas-pag .pinturas-pag .pintura-item .pintura-info,
-      .pinturas-pag .esculturas-pag .escultura-item .escultura-info,
-      .pinturas-pag .esculturas-pag .escultura-item .pintura-info,
-      .pinturas-pag .esculturas-pag .pintura-item .escultura-info,
-      .pinturas-pag .esculturas-pag .pintura-item .pintura-info,
-      .pinturas-pag .pinturas-pag .escultura-item .escultura-info,
-      .pinturas-pag .pinturas-pag .escultura-item .pintura-info,
-      .pinturas-pag .pinturas-pag .pintura-item .escultura-info,
-      .pinturas-pag .pinturas-pag .pintura-item .pintura-info {
+      .esculturas-pag .escultura-item .escultura-info,
+      .esculturas-pag .escultura-item .pintura-info,
+      .esculturas-pag .pintura-item .escultura-info,
+      .esculturas-pag .pintura-item .pintura-info,
+      .pinturas-pag .escultura-item .escultura-info,
+      .pinturas-pag .escultura-item .pintura-info,
+      .pinturas-pag .pintura-item .escultura-info,
+      .pinturas-pag .pintura-item .pintura-info {
         margin-left: 0;
         margin-top: 10px; } }
 

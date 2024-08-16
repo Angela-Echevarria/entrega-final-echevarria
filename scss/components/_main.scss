@@ -153,7 +153,6 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    
 
     .container {
         h1 {
@@ -220,7 +219,26 @@ main {
             }
         }
     }
-    @include esculturas-obras-responsive;
+
+    // Media query directamente en SCSS
+    @media (max-width: 1482px) {
+        .escultura-item,
+        .pintura-item {
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .escultura-info,
+            .pintura-info {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 /*---------------------------------------ARTISTAS----------------------------------------------------------*/
