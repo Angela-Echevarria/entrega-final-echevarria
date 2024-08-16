@@ -148,6 +148,8 @@ main {
 
 /*-----------------------------------------ESCULTURAS Y PINTURAS---------------------------------------------*/
 
+/*-----------------------------------------ESCULTURAS Y PINTURAS---------------------------------------------*/
+
 .esculturas-pag,
 .pinturas-pag {
     padding: 20px;
@@ -220,16 +222,28 @@ main {
         }
     }
 
-    // Media query directamente en SCSS
+    // Media query 
     @media (max-width: 1482px) {
         .escultura-item,
         .pintura-item {
-            @media (max-width: 1482px) {
-                grid-template-columns: 1fr; 
+            flex-direction: column;  
+            align-items: center;     
+            text-align: center;      
+
+            .escultura-info,
+            .pintura-info {
+                margin-left: 0;
+                margin-top: 10px;    
+            }
+
+            img {
+                width: 100%;        
+                height: auto;
+            }
         }
     }
 }
-}
+
 /*---------------------------------------ARTISTAS----------------------------------------------------------*/
 
 .artistas {
