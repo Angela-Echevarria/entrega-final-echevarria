@@ -299,8 +299,8 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: auto; }
-  .esculturas-pag .container h1,
-  .pinturas-pag .container h1 {
+  .esculturas-pag .container h2,
+  .pinturas-pag .container h2 {
     text-align: center;
     font-size: 2.5em;
     color: #000000;
