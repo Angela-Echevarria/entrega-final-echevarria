@@ -13,11 +13,12 @@
 
         <header>
             <div class="container">
-                <a href="../index.html" class="logo">
+                <a href="../index.html" class="logo"></a>
                     <h1>LA COMPANY</h1>
                     <P>galería de arte</P>
                     <a href="index.html"></a>
-                </a>
+            </div>
+
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="./artistas.html">Artistas</a></li>
@@ -187,11 +188,11 @@
             menuOverlay.classList.add('menu-overlay');
             menuOverlay.innerHTML = `
                 <ul>
-                    <li><a href="/pages/artistas.html">Artistas</a></li>
-                    <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="/pages/contactos.html">Contactos</a></li>
-                    <li><a href="../pages/esculturas.html">Esculturas</a></li>
-                    <li><a href="#usuario">Login</a></li>
+                        <li><a href="./artistas.html">Artistas</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./contactos.html">Contactos</a></li>
+                        <li><a href="./esculturas.html">Esculturas</a></li>
+                        <li><a href="#usuario">Login</a></li>
                 </ul>
             `;
             document.body.appendChild(menuOverlay);

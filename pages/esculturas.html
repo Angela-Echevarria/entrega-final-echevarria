@@ -11,15 +11,16 @@
     <!--!-----------------------------------------------HEADER-------------------------------------------------->
     <header>
         <div class="container">
-            <a href="..index.html" class="logo">
+            <a href="../index.html" class="logo"></a>
                 <h1>LA COMPANY</h1>
                 <p>galería de arte</p>
-            </a>
+            </div>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="./artistas.html">Artistas</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./contactos.html">Contactos</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./pinturas.html">Pinturas</a></li>
                     <li><a href="#usuario">Login</a></li>
                 </ul>
@@ -32,13 +33,14 @@
         </div>
     </header>
 
+
     <!--!---------------------------------------------MAIN-------------------------------------------------------->
     <section class="esculturas-pag">
         <div class="container">
             <h1>Esculturas</h1>
             <hr>
             <div class="escultura-item">
-                <img src="../img/escultura1.jpg" alt="Escultura 1">
+                <img src="../img/escultura 1.jpg" alt="Escultura 1">
                 <div class="escultura-info">
                     <h3>Sofía Rivera</h3>
                     <p>Nombre de la Obra: Flujos Eternos</p>
@@ -121,8 +123,31 @@
                 </div>
                 </footer>
                 <script>
-                    document.querySelector('.hamburgesa-menu').addEventListener('click', function() {
-                        document.querySelector('.nav-menu').classList.toggle('show-menu');
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const menuToggle = document.querySelector('.menu-toggle');
+                        const menuOverlay = document.createElement('div');
+                        menuOverlay.classList.add('menu-overlay');
+                        menuOverlay.innerHTML = `
+                            <ul>
+                            <li><a href="./artistas.html">Artistas</a></li>
+                            <li><a href="./contactos.html">Contactos</a></li>
+                            <li><a href="./nosotros.html">Nosotros</a></li>
+                            <li><a href="./pinturas.html">Pinturas</a></li>
+                            <li><a href="#usuario">Login</a></li>
+                            </ul>
+                        `;
+                        document.body.appendChild(menuOverlay);
+                
+                        menuToggle.addEventListener('click', function() {
+                            menuOverlay.classList.toggle('show');
+                        });
+                
+                        // Cierra el menú cuando se hace clic fuera de él
+                        menuOverlay.addEventListener('click', function(event) {
+                            if (event.target === menuOverlay) {
+                                menuOverlay.classList.remove('show');
+                            }
+                        });
                     });
                 </script>
         </body>

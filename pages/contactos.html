@@ -11,10 +11,11 @@
     <!--!-------------------------------------------HEADER---------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="..index.html" class="logo">
+            <a href="..index.html" class="logo"></a>
                 <h1>LA COMPANY</h1>
                 <p>galería de arte</p>
-            </a>
+        </div>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="./artistas.html">Artistas</a></li>
@@ -90,17 +91,20 @@
 
 
 <!--!FOOTER-->
-<div class="footerContainer">
-    <div class="socialIcons">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-spotify"></i></a>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://open.spotify.com/intl-es"><i class="fa-brands fa-spotify"></i></a>
+        </div>
     </div>
-</div>
-<div class="footerBottom">
-    <p>Copyright &copy;2024; Designed by <span class="designer">Angela Echevarria</span></p>
-</div>
+    <div class="footerBottom">
+        <p>contacto@lacompany.com.uy</p>
+        <p>+598-1234-5678</p>
+        <p>Copyright &copy;2024; Designed by <span class="designer">Angela Echevarria</span></p>
+    </div>
 </footer>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -109,11 +113,11 @@
         menuOverlay.classList.add('menu-overlay');
         menuOverlay.innerHTML = `
             <ul>
-                <li><a href=".artistas.html">Artistas</a></li>
-                <li><a href=".nosotros.html">Nosotros</a></li>
-                <li><a href=".esculturas.html">Esculturas</a></li>
-                <li><a href=".pinturas.html">Pinturas</a></li>
-                <li><a href="#usuario">Login</a></li>
+                    <li><a href="./artistas.html">Artistas</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./esculturas.html">Esculturas</a></li>
+                    <li><a href="./pinturas.html">Pinturas</a></li>
+                    <li><a href="#usuario">Login</a></li>
             </ul>
         `;
         document.body.appendChild(menuOverlay);
